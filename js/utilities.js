@@ -23,3 +23,7 @@ function getInnerTextById(id){
     const text = document.getElementById(id).innerText;
     return text;
 }
+function getAnElementById(id){
+    const element = document.getElementById(id);
+    return element;
+}

@@ -16,6 +16,7 @@ addEventListener('click',function(){
     document.getElementById('noakhali-added-amount').innerText = total;
     document.getElementById('available-balance').innerText = newBalance;
 
+
     // add to history
     const name = getInnerTextById('noakhali-headline');
     const div = document.createElement('div');
