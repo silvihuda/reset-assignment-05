@@ -14,7 +14,12 @@ document.getElementById('btn-quota-donation').addEventListener('click',function(
     const newBalance = availableBalance - quotaAmount;
     document.getElementById('quota-added-amount').innerText = total;
     document.getElementById('available-balance').innerText = newBalance;
-
+     
+     //show modal
+     const modal = getAnElementById('modal');
+     modal.classList.remove('hidden');
+     getAnElementById('donation-cards').classList.add('blur');
+     
      // add to history
      const name = getInnerTextById('quota-headline');
      const div = document.createElement('div');

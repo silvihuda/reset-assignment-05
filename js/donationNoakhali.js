@@ -16,7 +16,10 @@ addEventListener('click',function(){
     document.getElementById('noakhali-added-amount').innerText = total;
     document.getElementById('available-balance').innerText = newBalance;
 
-
+    //show modal
+    const modal = getAnElementById('modal');
+    modal.classList.remove('hidden');
+    getAnElementById('donation-cards').classList.add('blur');
     // add to history
     const name = getInnerTextById('noakhali-headline');
     const div = document.createElement('div');

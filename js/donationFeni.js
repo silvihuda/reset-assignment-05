@@ -15,6 +15,11 @@ document.getElementById('btn-donate-feni').addEventListener('click',function(){
     document.getElementById('feni-added-amount').innerText = total;
     document.getElementById('available-balance').innerText = newBalance;
 
+    //show modal
+    const modal = getAnElementById('modal');
+    modal.classList.remove('hidden');
+    getAnElementById('donation-cards').classList.add('blur');
+
     // add to history
     const name = getInnerTextById('feni-headline');
     const div = document.createElement('div');
